@@ -6,13 +6,14 @@ vp0:
     - "7053:7053"
   environment:
     - CORE_PEER_ADDRESSAUTODETECT=true
-    - CORE_VM_ENDPOINT=unix:///var/run/docker.sock
+    - CORE_VM_ENDPOINT=172.17.0.1:2375
     - CORE_LOGGING_LEVEL=DEBUG
     - CORE_PEER_ID=vp0
     - CORE_PEER_PKI_ECA_PADDR=172.17.0.2:7054
     - CORE_PEER_PKI_TCA_PADDR=172.17.0.2:7054
     - CORE_PEER_PKI_TLSCA_PADDR=172.17.0.2:7054
     - CORE_SECURITY_ENABLED=true
-    - CORE_SECURITY_ENROLLID=test_vp0
-    - CORE_SECURITY_ENROLLSECRET=hackathon000
-  command: peer node start --peer-chaincodedev
+   - CORE_SECURITY_ENROLLID=test_vp0
+   - CORE_SECURITY_ENROLLSECRET=hackathon000
+#  command: peer node start --peer-chaincodedev
+  command: peer node start
