@@ -9,7 +9,7 @@ The next one is the root validation node for the first peer in your network and 
 
 ## Prerequisites
 
-docker and docker-compose
+docker and docker-compose and vagrant version 1.8.6
 
 ## NOTE
 
