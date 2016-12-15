@@ -11,6 +11,10 @@ The next one is the root validation node for the first peer in your network and 
 
 docker and docker-compose
 
+## NOTE
+
+Running with docker for mac is _BROKEN_ now.
+
 ## Installation
 
 Membersrvc node,
@@ -23,13 +27,12 @@ docker-compose up
 the second one, Root node with ENROLLID `test_vp0` and ENROLLID `hackathon000`
 ```
 docker pull hyperledger/fabric-peer:latest
-cd your/workplace/hyperledger-fabric-docker/root
+cd your/workplace/hyperledger-fabric-docker/osx_or_linux/root
 docker-compose up
 ```
 
 and the last one is the additional validation node with ENROLLID `test_vp1` and ENROLLID `hackathon001`
 ```
-docker pull hyperledger/fabric-peer:latest
-cd your/workplace/hyperledger-fabric-docker/peer2
+cd your/workplace/hyperledger-fabric-docker/osx_or_linux/peer
 docker-compose up
 ```
