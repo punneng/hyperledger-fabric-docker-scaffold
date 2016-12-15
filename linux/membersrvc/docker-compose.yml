@@ -1,5 +1,3 @@
 membersrvc:
   image: punneng/hyperledger-fabric-membersrvc
-  ports:
-    - "7054:7054"
   command: /opt/gopath/bin/membersrvc

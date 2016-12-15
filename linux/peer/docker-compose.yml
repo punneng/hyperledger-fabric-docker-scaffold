@@ -1,7 +1,5 @@
 vp1:
   image: hyperledger/fabric-peer
-  ports:
-    - "7150:7050"
   environment:
     - CORE_PEER_ADDRESSAUTODETECT=true
     - CORE_VM_ENDPOINT=172.17.0.1:2375
