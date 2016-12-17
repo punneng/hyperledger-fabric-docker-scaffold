@@ -1,12 +1,12 @@
 vp1:
   image: hyperledger/fabric-peer
-  # if you are running docker daemon with sock file then change to unix:///var/run/docker.sock
-  # volumes:
-  #   - /var/run/docker.sock:/var/run/docker.sock
+  # if you are running docker daemon with tcp, need to remove volumes block
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
   environment:
     - CORE_PEER_ADDRESSAUTODETECT=true
-    # if you are running docker daemon with sock file then change to unix:///var/run/docker.sock
-    - CORE_VM_ENDPOINT=172.17.0.1:2375
+    # if you are running docker daemon with tcp, need to change to docker remote api ip
+    - CORE_VM_ENDPOINT=unix:///var/run/docker.sock
     - CORE_LOGGING_LEVEL=DEBUG
     - CORE_PEER_DISCOVERY_ROOTNODE=172.17.0.3:7051
     - CORE_PEER_ID=vp1
