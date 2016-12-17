@@ -11,10 +11,6 @@ The next one is the root validation node for the first peer in your network and 
 
 docker and docker-compose and vagrant version 1.8.6
 
-## NOTE
-
-Running with docker for mac is _BROKEN_ now.
-
 ## Installation
 
 Fabric baseimage ,
