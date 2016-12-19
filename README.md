@@ -17,7 +17,6 @@ Fabric baseimage ,
 ```
 docker pull hyperledger/fabric-baseimage:x86_64-0.2.2
 docker tag <fabric-baseimage image id> hyperledger/fabric-baseimage:latest
-docker-compose up
 ```
 
 Membersrvc node,
